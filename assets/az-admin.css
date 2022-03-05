@@ -1,0 +1,96 @@
+#toplevel_page_crb_carbon_fields_container_a-z_moving div.wp-menu-image {
+    background: url(./img/logo.png) center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.az-wrapper {
+    max-width: 1200px;
+    padding: 40px 20px;
+}
+
+.az-header {
+    padding: 20px;
+    background: white;
+    border-radius: 4px 4px 0 0;
+}
+
+.az-header > h1 {
+    margin: 0;
+    line-height: 1;
+}
+
+.az-body {
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 0 0 4px 4px;
+}
+
+.az-text {
+    margin-bottom: 20px;
+}
+
+.az-infobox {
+    padding: 20px;
+    border: 2px solid #f6655b;
+    border-radius: 4px;
+}
+
+.az-infobox__message {
+    margin-bottom: 10px;
+}
+
+a.az-btn,
+button.az-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    background: #f6655b;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.az-btn:disabled {
+    color: #c1c1c1;
+    background: #bb4b43;
+    cursor: not-allowed;
+}
+
+button.az-btn.loading:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+    width: 12px;
+    height: 12px;
+    border: 3px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: anim_spin 1s linear infinite;
+}
+
+.az-btn:hover {
+    color: white;
+}
+
+/**
+ *  Animations
+ */
+
+@keyframes anim_spin {
+    from {
+        transform: rotateZ(0);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
