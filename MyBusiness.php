@@ -2775,6 +2775,7 @@ class Google_Service_MyBusiness_AccountsLocationsReviews_Resource extends Google
   public function listAccountsLocationsReviews($parent, $optParams = array())
   {
     $params = array('parent' => $parent);
+    $optParams = array('pageSize' => 10, 'orderBy' => 'update_time desc');
     $params = array_merge($params, $optParams);
     return $this->call('list', array($params), "Google_Service_MyBusiness_ListReviewsResponse");
   }
